@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEDD6A271E4C479B000CE2EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD6A261E4C479B000CE2EB /* main.m */; };
+		BEDD6A2A1E4C479B000CE2EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD6A291E4C479B000CE2EB /* AppDelegate.m */; };
+		BEDD6A2D1E4C479B000CE2EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD6A2C1E4C479B000CE2EB /* ViewController.m */; };
+		BEDD6A301E4C479B000CE2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDD6A2E1E4C479B000CE2EB /* Main.storyboard */; };
+		BEDD6A321E4C479B000CE2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDD6A311E4C479B000CE2EB /* Assets.xcassets */; };
+		BEDD6A351E4C479B000CE2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDD6A331E4C479B000CE2EB /* LaunchScreen.storyboard */; };
+		BEDD6A3F1E4C47ED000CE2EB /* bencode.c in Sources */ = {isa = PBXBuildFile; fileRef = BEDD6A3D1E4C47ED000CE2EB /* bencode.c */; };
+		BEDD6A421E4C4870000CE2EB /* BTUrl2Magnet.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD6A411E4C4870000CE2EB /* BTUrl2Magnet.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEDD6A221E4C479B000CE2EB /* Torrent2Magnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torrent2Magnet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDD6A261E4C479B000CE2EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEDD6A281E4C479B000CE2EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEDD6A291E4C479B000CE2EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEDD6A2B1E4C479B000CE2EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEDD6A2C1E4C479B000CE2EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEDD6A2F1E4C479B000CE2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEDD6A311E4C479B000CE2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEDD6A341E4C479B000CE2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEDD6A361E4C479B000CE2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDD6A3D1E4C47ED000CE2EB /* bencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bencode.c; sourceTree = "<group>"; };
+		BEDD6A3E1E4C47ED000CE2EB /* bencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bencode.h; sourceTree = "<group>"; };
+		BEDD6A401E4C4870000CE2EB /* BTUrl2Magnet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTUrl2Magnet.h; sourceTree = "<group>"; };
+		BEDD6A411E4C4870000CE2EB /* BTUrl2Magnet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTUrl2Magnet.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEDD6A1F1E4C479B000CE2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEDD6A191E4C479B000CE2EB = {
+			isa = PBXGroup;
+			children = (
+				BEDD6A3C1E4C47A7000CE2EB /* bencode */,
+				BEDD6A241E4C479B000CE2EB /* Torrent2Magnet */,
+				BEDD6A231E4C479B000CE2EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEDD6A231E4C479B000CE2EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD6A221E4C479B000CE2EB /* Torrent2Magnet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEDD6A241E4C479B000CE2EB /* Torrent2Magnet */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD6A281E4C479B000CE2EB /* AppDelegate.h */,
+				BEDD6A291E4C479B000CE2EB /* AppDelegate.m */,
+				BEDD6A2B1E4C479B000CE2EB /* ViewController.h */,
+				BEDD6A2C1E4C479B000CE2EB /* ViewController.m */,
+				BEDD6A2E1E4C479B000CE2EB /* Main.storyboard */,
+				BEDD6A311E4C479B000CE2EB /* Assets.xcassets */,
+				BEDD6A331E4C479B000CE2EB /* LaunchScreen.storyboard */,
+				BEDD6A361E4C479B000CE2EB /* Info.plist */,
+				BEDD6A251E4C479B000CE2EB /* Supporting Files */,
+			);
+			path = Torrent2Magnet;
+			sourceTree = "<group>";
+		};
+		BEDD6A251E4C479B000CE2EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD6A261E4C479B000CE2EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEDD6A3C1E4C47A7000CE2EB /* bencode */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD6A3D1E4C47ED000CE2EB /* bencode.c */,
+				BEDD6A3E1E4C47ED000CE2EB /* bencode.h */,
+				BEDD6A401E4C4870000CE2EB /* BTUrl2Magnet.h */,
+				BEDD6A411E4C4870000CE2EB /* BTUrl2Magnet.m */,
+			);
+			name = bencode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEDD6A211E4C479B000CE2EB /* Torrent2Magnet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDD6A391E4C479B000CE2EB /* Build configuration list for PBXNativeTarget "Torrent2Magnet" */;
+			buildPhases = (
+				BEDD6A1E1E4C479B000CE2EB /* Sources */,
+				BEDD6A1F1E4C479B000CE2EB /* Frameworks */,
+				BEDD6A201E4C479B000CE2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Torrent2Magnet;
+			productName = Torrent2Magnet;
+			productReference = BEDD6A221E4C479B000CE2EB /* Torrent2Magnet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEDD6A1A1E4C479B000CE2EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = LandOfMystery;
+				TargetAttributes = {
+					BEDD6A211E4C479B000CE2EB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8WH2Z48PK4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BEDD6A1D1E4C479B000CE2EB /* Build configuration list for PBXProject "Torrent2Magnet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEDD6A191E4C479B000CE2EB;
+			productRefGroup = BEDD6A231E4C479B000CE2EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEDD6A211E4C479B000CE2EB /* Torrent2Magnet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEDD6A201E4C479B000CE2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDD6A351E4C479B000CE2EB /* LaunchScreen.storyboard in Resources */,
+				BEDD6A321E4C479B000CE2EB /* Assets.xcassets in Resources */,
+				BEDD6A301E4C479B000CE2EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEDD6A1E1E4C479B000CE2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDD6A421E4C4870000CE2EB /* BTUrl2Magnet.m in Sources */,
+				BEDD6A2D1E4C479B000CE2EB /* ViewController.m in Sources */,
+				BEDD6A2A1E4C479B000CE2EB /* AppDelegate.m in Sources */,
+				BEDD6A3F1E4C47ED000CE2EB /* bencode.c in Sources */,
+				BEDD6A271E4C479B000CE2EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEDD6A2E1E4C479B000CE2EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDD6A2F1E4C479B000CE2EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEDD6A331E4C479B000CE2EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDD6A341E4C479B000CE2EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEDD6A371E4C479B000CE2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEDD6A381E4C479B000CE2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEDD6A3A1E4C479B000CE2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8WH2Z48PK4;
+				INFOPLIST_FILE = Torrent2Magnet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.landofmystery.Torrent2Magnet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEDD6A3B1E4C479B000CE2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8WH2Z48PK4;
+				INFOPLIST_FILE = Torrent2Magnet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.landofmystery.Torrent2Magnet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEDD6A1D1E4C479B000CE2EB /* Build configuration list for PBXProject "Torrent2Magnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDD6A371E4C479B000CE2EB /* Debug */,
+				BEDD6A381E4C479B000CE2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDD6A391E4C479B000CE2EB /* Build configuration list for PBXNativeTarget "Torrent2Magnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDD6A3A1E4C479B000CE2EB /* Debug */,
+				BEDD6A3B1E4C479B000CE2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEDD6A1A1E4C479B000CE2EB /* Project object */;
+}
