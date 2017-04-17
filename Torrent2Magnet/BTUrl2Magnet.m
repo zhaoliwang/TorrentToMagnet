@@ -96,7 +96,7 @@
         [nameStr appendFormat:@"%c", *(name+i)];
     }
     
-    NSString *magnet = [NSString stringWithFormat:@"magnet:?xt=urn:btih:%@&dn=%@&tr=%@&xl=%lu",output,nameStr,trStr,lengthL];
+    NSString *magnet = [NSString stringWithFormat:@"magnet:?xt=urn:btih:%@&tr=%@&xl=%lu",output,trStr,lengthL];
 
     return magnet;
 }
