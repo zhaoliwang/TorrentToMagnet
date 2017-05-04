@@ -42,19 +42,22 @@
     if (str) {
         [self addLog:@"开始解析剪切板上的url地址..."];
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
-
-            NSString *magnet = [BTUrl2Magnet btUrlToMagnet:str];
-            if (magnet.length > 0) {
-                [self addLog:[NSString stringWithFormat:@"解析结果为：%@",magnet]];
-                [board setString:magnet];
-                [self addLog:@"已经将解析结果复制到剪切板上，您可以使用其它离线下载应用（比如115网盘）下载了"];
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:magnet message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-                [alertView show];
-            } else {
-                [self addLog:@"url解析失败了，您复制的地址可能不是一个种子地址"];
-                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"解析失败" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
-                [alertView show];
-            }
+                NSString *magnet = [BTUrl2Magnet btUrlToMagnet:str];
+                if (magnet.length > 0) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self addLog:[NSString stringWithFormat:@"解析结果为：%@",magnet]];
+                        [board setString:magnet];
+                        [self addLog:@"已经将解析结果复制到剪切板上，您可以使用其它离线下载应用（比如115网盘）下载了"];
+                        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:magnet message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                        [alertView show];
+                    });
+                } else {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self addLog:@"url解析失败了，您复制的地址可能不是一个种子地址"];
+                        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"解析失败" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                        [alertView show];
+                    });
+                }
         });
     } else {
         [self addLog:@"剪切板上的内容为空，工作无法开始"];
@@ -62,12 +65,11 @@
 }
 
 - (void)addLog:(NSString *)log{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSString *str = self.logView.text;
-        NSString *newLog = [NSString stringWithFormat:@"%@\n%@",str,log];
-        [self.logView setText:newLog];
-        [self.logView scrollRangeToVisible:NSMakeRange(self.logView.text.length - 1 , 1)];
-    });
+    NSString *str = self.logView.text;
+    NSString *newLog = [NSString stringWithFormat:@"%@\n%@",str,log];
+    [self.logView setText:newLog];
+    [self.logView scrollRangeToVisible:NSMakeRange(self.logView.text.length - 1 , 1)];
+    
 }
 
 - (UITextView *)logView{

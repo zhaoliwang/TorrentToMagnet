@@ -19,19 +19,20 @@
     }
 
     NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+
     const char *c = [data bytes];
     
     bencode_t ben,ben2;
     const char *key;
-    int klen;
+    int klen = 0;
     
     const char *tr;
-    int trLength;
+    int trLength = 0;
     
     const char *name;
-    int nameLength;
+    int nameLength = 0;
     
-    long int lengthL;
+    long int lengthL = 0;
     
     NSMutableString *output = [NSMutableString stringWithCapacity:CC_SHA1_DIGEST_LENGTH * 2];
     NSMutableString *nameStr = [[NSMutableString alloc] init];
